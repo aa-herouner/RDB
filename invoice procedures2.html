@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+         body{
+        
+        background-image: url(IMAGES/Plain-Blue.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 70px;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel panel-primary" style="margin-top: 20px;">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Dashboard
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                       <div>
+                            <a href="profile_1.html" class="list-group-item">Profile<span class="fa fa-user pull-right" style="color:#0073e6;"></span></a>
+                            <a href="invoice procedures2.html" class="list-group-item active">Pay dues<span class="fa fa-envelope pull-right"  style="color: #0073e6;"></span></a>
+                            <a href="change_password1.html" class="list-group-item">Change password<span class="fa fa-edit pull-right"  style="color:#0073e6;"></span></a>
+                            <a href="Student Records.html" class="list-group-item"><span class="fa fa-logout">Log Out</span></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="panel panel-primary" style="margin-top: 20px; margin-right: 100px;">
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="text-align: center;">
+                            INVOICE PROCEDURES
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">REG NO</label>
+                                <input type="text" class="form-control" placeholder="UG08/ASHS/1001">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Level</label>
+                                <select class="form-control">
+                                    <option>--Select Your Current Level</option>
+                                    <option value="100level">100level</option>
+                                    <option value="200level">200level</option>
+                                    <option value="300level">300level</option>
+                                    <option value="400level">400level</option>
+                                    <option value="500level">500level</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Session</label>
+                                <select class="form-control">
+                                    <option>--Select Academic Session--</option>
+                                    <option value="2015/2016 academic session">2015/2016 Academic Session</option>
+                                    <option value="2016/2017 academic session">2016/2017 Academic Session</option>
+                                    <option value="2017/2018 academic session">2017/2018 Academic Session</option>
+                                    <option value="2018/2019 academic session">2018/2019 Academic Session</option>
+                                    <option value="2019/2020 academic session">2019/2020 Academic Session</option>
+                                    <option value="2020/2021 academic session">2020/2021 Academic Session</option>
+                                </select>
+                            </div>
+                        </div>    
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Faculty</label>
+                                <select class="form-control">
+                                    <option>--Select Faculty--</option>
+                                    <option value="Faculty of Arts and Social Sciences">Faculty of Arts and Social Sciences</option>
+                                    <option value="Faculty of Science">Faculty of Science</option>
+                                    <option value="Faculty of Education">Faculty of Education</option>
+                                    <option value="Faculty of pharmaceutical sciences">Faculty of pharmaceutical sciences</option>
+                                    <option value="College of Medical Sciences">College of Medical Sciences</option>
+                                </select>
+                
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Department</label>
+                                <select class="form-control">
+                                    <option>--Select Department--</option>
+                                    <option value="history">History</option>
+                                    <option value="biochemistry">Bio-Chemistry</option>
+                                    <option value="computer science">Computer science</option>
+                                    <option value="Public Admintration">Public Admintration</option>
+                                    <option value="MBBS">MBBS</option>
+                                    <option value="political science">Political science</option>
+                                    <option value="Biological science">Biological science</option>
+                                    <option value="physics">Physics</option>
+                                    <option value="English">English</option>
+                                    <option value="pharmacy">Pharmacy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Payment Type</label>
+                                <select class="form-control">
+                                    <option>--Select Payment Type</option>
+                                    <option value="generate rrr">Generate RRR</option>
+                                    <option value="bank payment">Bank Payment</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">RRR NO</label>
+                                <input type="text" class="form-control" placeholder="Insert RRR no">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">DUES</label>
+                                <select class="form-control">
+                                    <option>--Select your appropriate dues--</option>
+                                    <option value="departmental fee">Departmental Fee</option>
+                                    <option value="GOSSA">GOSSA</option>
+                                    <option value="MSSN">MSSN</option>
+                                    <option value="ICT">ICT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="margin-left: 70%;">
+                            <button class="btn btn-default"><a href="Payment Statistics.html" style="text-decoration: none;">SUBMIT</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

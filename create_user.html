@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+      body{
+        background-image: url(IMAGES/Plain-Blue.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+          margin-top: 90px;
+          margin-left: 5px;
+      }
+    </style>
+
+</head>
+<body>
+   <div class="container">
+     <div class="row">
+      <div class="col-lg-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Dashboard
+                </h4>
+            </div>
+            <div class="panel-body">
+               <div>
+                    <a href="Profile_2.html" class="list-group-item">Profile<span class="fa fa-user pull-right" style="color:#475cd4;"></span></a>
+                    <a href="create_user.html" class="list-group-item active">Create User<span class="fa fa-edit pull-right"  style="color:#475cd4;"></span></a>
+                    <a href="view_student_profile.html" class="list-group-item">View Student's Profile<span class="fa fa-user pull-right"  style="color:#475cd4;"></span></a>
+                    <a data-toggle="collapse" href="#collapse1" class="list-group-item">Annual Statistics<span class="fa fa-calculator pull-right"  style="color:#475cd4;"></span>
+                       <div id="collapse1" class="collapse collapse">
+                                  <a href="numbers_of_students1.html" class="list-group-item">Total Numbers of Student</a>
+                                  <a href="sum_of_money_accumulated.html" class="list-group-item">Total Sum of money accumulated</a>
+                                  <!--<a href="" class="list-group-item">Pending Students unable to pay</a>-->
+                      </div>      
+                    </a>
+                    <a href="change_password2.html" class="list-group-item">Change Password<span class="fa fa-edit pull-right"  style="color:#475cd4;"></span></a>
+                    <a href="Student Records.html" class="list-group-item">Logout<span class="fa fa-terminate pull-right"  style="color:#475cd4;"></span></a>
+               </div>
+            </div>
+        </div>
+    </div>
+       <div class="col-lg-9">
+         <div class="panel panel-primary">
+           <div class="panel-heading">
+            <h4 class="panel-title" style="text-align: center;">
+              Biodata
+            </h4>
+           </div>
+           <div class="panel-body">
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">NAME</label>
+                <input type="text" class="form-control"  placeholder="Gambo Maina">
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">DATE OF BIRTH</label>
+                <input type="date" name="bday" class="form-control" id="input" >
+                </div>
+            </div>  
+            <div class="col-lg-4">
+              <div class="form-group"> 
+                <label class="control-label">PHONE NUMBER</label>
+                <input type="number" class="form-control" maxlength="11" id="input" placeholder="+22985362727">
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="control-label">GENDER</label><br>
+                  <input type="radio" name="gender" value="male"> MALE  <input type="radio" name="gender" value="female" > FEMALE
+                </div>
+              </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">EMAIL  ADDRESS</label>
+                <input type="email" name="email" id="input" class="form-control" placeholder="josephjacob@yahoo.com">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">CONTACT ADDRESS</label>
+                <input type="text" class="form-control" id="input" placeholder="Gombe Shopping complex">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">STATE OF ORIGIN</label>
+                <select class="form-control">
+                <option class="select">--SELECT STATE--</option>
+                <option value="Abia">ABIA</option>
+                <option value="Adamawa">ADAMAWA</option>
+                <option value="Anambara">ANAMBARA</option>
+                <option value="Bauchi">BAUCHI</option>
+                <option value="Bayelsa">BAYELSA</option>
+                <option value="cross-river">CROSS-RIVER</option>
+                <option value="Delta">DELTA</option>
+                <option value="Enugu">ENUGU</option>
+                <option value="Gombe">GOMBE</option>
+                <option value="Taraba">TARABA</option>
+                <option value="Borno">BORNO</option>
+                <option value="Jigawa">JIGAWA</option>
+                <option value="Kano">KANO</option>
+                <option value="Kaduna">KADUNA</option>
+                <option value="Lagos">LAGOS</option>
+                <option value="Kwara">KWARA</option>
+                <option value="Ondo">ONDO</option>
+                <option value="Oyo">OYO</option>
+                <option value="Osun">OSUN</option>
+                <option value="Yobe">YOBE</option>
+                <option value="zamfara">ZAMFARA</option>
+               </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">POSTAL CODE</label>
+                <input type="number" class="form-control" id="input" placeholder="BOB14">      
+               </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">Rank</label><br>
+              <select class="form-control">
+                  <option class="option">--SELECT Rank--</option>
+                  <option value="president">PRESIDENT</option>
+                  <option value="vice president">VICE PRESIDENT</option>
+                  <option value="secretary general">SECRETARY GENERAL</option>
+                  <option value="assistant sec general">ASSISTANT SEC GENERAL</option>
+                  <option value="FINANCIAL SECRETARY">FINANCIAL SECRETARY</option>
+                  <option value="ASSISTANT FINANCIAL SEC">ASSISTANT FINANCIAL SEC</option>
+                  <option value="TREASURER">TREASURER</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                  <label class="control-label">POSITION</label>
+                  <select class="form-control">
+                    <option>--SELECT POSITION--</option>
+                    <option value="ADMIN">ADMIN</option>
+                    <option value="ASSISTANT ADMIN">ASSISTANT ADMIN</option>
+                    <option value="MEMBER">MEMBER</option>
+                    <option value="MEMBER">MEMBER</option>
+                    <option value="MEMBER">MEMBER</option>
+                    <option value="MEMBER">MEMBER</option>
+                  </select>
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">L.G.A</label><br>
+                 <select class="form-control">
+                     <option class="active">--SELECT L.G.A--</option>
+                     <option value="Akko">AKKO</option>
+                     <option value="Balanga">BALANGA</option>
+                     <option value="Billiri">BILLIRI</option>
+                     <option value="Dukku">DUKKU</option>
+                     <option value="Funakaye">FUNAKAYE</option>
+                     <option value="Gombe">GOMBE</option>
+                     <option value="kaltungo">KALTUNGO</option>
+                     <option value="Kwami">KWAMI</option>
+                     <option value="Nafada">NAFADA</option>
+                     <option value="Shongom">SHONGOM</option>
+                     <option value="Yamaltu-Deba">YAMALTU-DEBA</option>
+                 </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label for="pwd">Create Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter New Password">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label for="pwd">Confirm Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+              </div>
+            </div>
+           </div>
+           <button class="btn btn-default" style="margin-left: 80%; margin-bottom: 20px;"><a href="#" style="text-decoration: none;">SUBMIT</a></button>
+         </div>
+       </div>
+     </div>
+     <div>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body{
+        
+          background-image: url(IMAGES/Plain-Blue.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-top: 70px;
+          margin-left: 250px;
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-9">
+         <div class="panel panel-primary">
+           <div class="panel-heading">
+            <h4 class="panel-title" style="text-align: center;">
+             BIO-DATA
+            </h4>
+           </div>
+           <div class="panel-body">
+             <div class="col-lg-4">
+               <div class="form-group">
+                 <label class="control-label">REG NO</label>
+                 <input type="text" class="form-control">
+               </div>
+             </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">NAME</label>
+                <input type="text" class="form-control"  placeholder="Gambo Maina">
+              </div>
+            </div> 
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">DATE OF BIRTH</label>
+                <input type="date" name="bday" class="form-control" id="input" >
+                </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">GENDER</label><br>
+                <input type="radio" name="gender" value="male"> MALE  <input type="radio" name="gender" value="female" > FEMALE
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group"> 
+                <label class="control-label">PHONE NUMBER</label>
+                <input type="number" class="form-control" maxlength="11" id="input" placeholder="+22985362727">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">EMAIL  ADDRESS</label>
+                <input type="email" name="email" id="input" class="form-control" placeholder="josephjacob@yahoo.com">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">CONTACT ADDRESS</label>
+                <input type="text" class="form-control" id="input" placeholder="Gombe Shopping complex">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">STATE OF ORIGIN</label>
+                <select class="form-control">
+                <option class="select">--SELECT STATE--</option>
+                <option value="Abia">ABIA</option>
+                <option value="Adamawa">ADAMAWA</option>
+                <option value="Anambara">ANAMBARA</option>
+                <option value="Bauchi">BAUCHI</option>
+                <option value="Bayelsa">BAYELSA</option>
+                <option value="cross-river">CROSS-RIVER</option>
+                <option value="Delta">DELTA</option>
+                <option value="Enugu">ENUGU</option>
+                <option value="Gombe">GOMBE</option>
+                <option value="Taraba">TARABA</option>
+                <option value="Borno">BORNO</option>
+                <option value="Jigawa">JIGAWA</option>
+                <option value="Kano">KANO</option>
+                <option value="Kaduna">KADUNA</option>
+                <option value="Lagos">LAGOS</option>
+                <option value="Kwara">KWARA</option>
+                <option value="Ondo">ONDO</option>
+                <option value="Oyo">OYO</option>
+                <option value="Osun">OSUN</option>
+                <option value="Yobe">YOBE</option>
+                <option value="zamfara">ZAMFARA</option>
+               </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">POSTAL CODE</label>
+                <input type="number" class="form-control" id="input" placeholder="BOB14">      
+               </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">Nationality</label><br>
+              <select class="form-control">
+                  <option class="option">--SELECT COUNTRY--</option>
+                  <option value="NIGER">NIGER</option>
+                  <option value="Ghana">GHANA</option>
+                  <option value="Mali">MALI</option>
+                  <option value="Burkina faso">BURKINA FASO</option>
+                  <option value="Cameroon">CAMEROON</option>
+                  <option value="Chad">CHAD</option>
+                  <option value="Egypt">EGYPT</option>
+                  <option value="Sudan">SUDAN</option>
+                  <option value="Nigeria">NIGERIA</option>
+                  <option value="South-africa">SOUTH-AFRICA</option>
+                  <option value="Ethopia">ETHOPIA</option>
+                  <option value="Algeria">ALGERIA</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">L.G.A</label><br>
+                 <select class="form-control">
+                     <option class="active">--SELECT L.G.A--</option>
+                     <option value="Akko">AKKO</option>
+                     <option value="Balanga">BALANAGA</option>
+                     <option value="Billiri">BILLIRI</option>
+                     <option value="Dukku">DUKKU</option>
+                     <option value="Funakaye">FUNAKAYE</option>
+                     <option value="Gombe">GOMBE</option>
+                     <option value="kaltungo">KALTUNGO</option>
+                     <option value="Kwami">KWAMI</option>
+                     <option value="Nafada">NAFADA</option>
+                     <option value="Shongom">SHONGOM</option>
+                     <option value="Yamaltu-Deba">YAMALTU-DEBA</option>
+                 </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">RELIGION</label>
+                <select class="form-control">
+                  <option>--SELECT RELIGION--</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Christianity">Christianity</option>
+                  <option value="Hinduism">Hinduism</option>
+                  <option value="buddism">Buddism</option>
+                  <option value="judism">Judism</option>
+                  <option value="pegan">Pegan</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="control-label">Tribe</label>
+                <select class="form-control">
+                  <option>--SELECT Tribe--</option>
+                  <option value="hausa">Hausa</option>
+                  <option value="fulani">Fulani</option>
+                  <option value="igbo">Igbo</option>
+                  <option value="yoruba">Yoruba</option>
+                  <option value="kanuri">Kanuri</option>
+                  <option value="ibira">Igbira</option>
+                  <option value="tera">Tera</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label for="pwd">Create Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter New Password">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label for="pwd">Confirm Password</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+              </div>
+            </div>
+            <div style="margin-left: 70%;">
+              <button class="btn btn-default"><a href="invoice procedures.html" style="text-decoration: none;">PROCEED</a></button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      body{
+        
+          background-image: url(IMAGES/Plain-Blue.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+         padding-top: 10%;
+         padding-left: 10%;
+
+         
+      }
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+<body onload="clearList()">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+               <h4 class="panel-title" style="text-align: center;">
+                SELECTION
+               </h4>
+              </div>
+              <div class="panel-body">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="control-label">STATE OF ORIGIN</label>
+                    <select class="form-control" name="" onchange="selection()" id="Ahmad">
+                    <option class="select">--SELECT STATE--</option>
+                   <!--<option value="Abia">ABIA</option>
+                    <option value="Adamawa">ADAMAWA</option>
+                    <option value="Anambara">ANAMBARA</option>
+                    <option value="Bauchi">BAUCHI</option>
+                    <option value="Bayelsa">BAYELSA</option>
+                    <option value="cross-river">CROSS-RIVER</option>-->
+                    <option value="Enugu">ENUGU</option>
+                    <option value="gombe">GOMBE</option>
+                    <option value="Delta">DELTA</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <!--<label class="control-label">L.G.A</label><br>-->
+                     <select class="form-control" name="" id="gombe"><br>
+                         <option class="active">--SELECT L.G.A--</option>
+                         <option value="Akko">AKKO</option>
+                         <option value="Balanga">BALANAGA</option>
+                         <option value="Billiri">BILLIRI</option>
+                         <option value="Dukku">DUKKU</option>
+                         <option value="Funakaye">FUNAKAYE</option>
+                         <option value="Gombe">GOMBE</option>
+                         <option value="kaltungo">KALTUNGO</option>
+                         <option value="Kwami">KWAMI</option>
+                         <option value="Nafada">NAFADA</option>
+                         <option value="Shongom">SHONGOM</option>
+                         <option value="Yamaltu-Deba">YAMALTU-DEBA</option>
+                     </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <!--<label class="control-label">L.G.A</label><br>-->
+                     <select class="form-control" name="" id="Enugu"><br>
+                         <option class="">--SELECT L.G.A--</option>                                     
+                         <option value="enugu south">Enugu South</option>
+                         <option value="Enugu North">Enugu North</option>
+                         <option value="Igbo-Eze South">Igbo-Eze South</option>
+                         <option value="Nkanu">Nkanu</option>
+                         <option value="Enugu Eas">Enugu Eas</option>
+                         <option value="Aninri">Aninri</option>
+                         <option value="Udenu">Udenu</option>
+                     </select>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript">
+  function selection() {
+     var Ahmad = document.getElementById("Ahmad").value;
+     if(Ahmad== "gombe") {
+          document.getElementById("gombe").style.visibility="visible";
+          document.getElementById("Enugu").style.visibility="hidden";
+
+     }
+     else if(Ahmad== "Enugu"){
+          document.getElementById("gombe").style.visibility="hiddden";
+          document.getElementById("Enugu").style.visibility="visible";
+
+     }
+     else{
+       alert("YOUR INPUT FIELD IS INVALID");
+      }
+    }
+
+ function clearList(){
+      document.getElementById("gombe").style.visibility="hidden";
+      document.getElementById("Enugu").style.visibility="hidden";
+     }
+  
+</script>
+</body>
+</html>
